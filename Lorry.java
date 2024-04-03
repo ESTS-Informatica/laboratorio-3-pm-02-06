@@ -43,8 +43,8 @@ public class Lorry extends GroundTransportation
         sb.append(String.format("%15s: %s\n", "Destino", getDestination()));
         sb.append(String.format("%15s: %5.2f€\n", "Preço", getPrice()));
         sb.append(String.format("%15s: %4.2f%%\n", "Honorarios", getFees()));
-        sb.append(String.format("%15s: %4.2f€\n", "Preço Final", getPriceWithFees()))
-        sb.append(String.format("%15s: %d\n", "Numero de paletes", numberOfPallets))
+        sb.append(String.format("%15s: %4.2f€\n", "Preço Final", getPriceWithFees()));
+        sb.append(String.format("%15s: %d\n", "Numero de paletes", numberOfPallets));
         sb.append(String.format("%15s: %d\n", "Trailers", trailers));  
 
         return sb.toString();

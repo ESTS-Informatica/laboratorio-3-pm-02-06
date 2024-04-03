@@ -14,6 +14,26 @@ public class AirTransportation extends Transport
     
     public AirTransportation(){
         super();
-        setFees(4.0);
+        setFees(AIR_FEES);
+    }
+    
+    public String getName(){
+        return name;
+    }
+    
+    public void setName(String name){
+        if(name != ""){
+            this.name = name;
+        }
+    }
+    
+    public int getNumberOfContainers(){
+        return numberOfContainers;
+    }
+    
+    public void setNumberOfContainers(int numberOfContainers){
+        if(numberOfContainers > 0){
+            this.numberOfContainers = numberOfContainers;
+        }
     }
 }
